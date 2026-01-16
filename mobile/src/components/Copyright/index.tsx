@@ -7,7 +7,7 @@ import { styles } from './styles';
 export function Copyright() {
   return (
     <View>
-      <Text style={styles.text}>Desenvolvido por Rey</Text>
+      <Text style={styles.text}>Desenvolvido por Kartado</Text>
     </View>
   );
 }

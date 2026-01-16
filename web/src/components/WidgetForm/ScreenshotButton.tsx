@@ -29,13 +29,13 @@ export const ScreenshotButton = ({
     return (
       <button
         type="button"
-        className="p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors focus:outline-none"
+        className="p-1 w-10 h-10 rounded-md border-brand-300 border-2 flex justify-end items-end text-note hover:brightness-125 focus:ring-2 focus:ring-offset-2 focus:ring-offset-body-100 focus:ring-brand-500 transition-colors focus:outline-none"
         onClick={() => onScreenShotTook(null)}
         style={{
           backgroundImage: `url(${screenshot})`,
         }}
       >
-        <Trash weight="fill" />
+        <Trash weight="fill" className='text-note' />
       </button>
     );
   }
@@ -43,13 +43,13 @@ export const ScreenshotButton = ({
   return (
     <button
       type="button"
-      className="p-2 bg-zinc-800 rounded-md border-transparent hover:bg-zinc-700 focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors focus:outline-none group"
+      className="p-2 bg-body-100 border border-brand-300 rounded-md hover:brightness-125 focus:ring-2 focus:ring-offset-2 focus:ring-offset-brand-300 focus:ring-brand-500 transition-colors focus:outline-none group"
       onClick={handleTakeScreenShot}
     >
       {isTakingScreenshot ? (
         <Loading />
       ) : (
-        <Camera className="w-6 h-6 text-zinc-100 opacity-50  group-hover:opacity-100" />
+        <Camera className="w-6 h-6 text-note opacity-50  group-hover:opacity-100" />
       )}
     </button>
   );

@@ -44,7 +44,7 @@ export const WidgetForm = () => {
   }
 
   return (
-    <div className="border-2 border-brand-500 border-opacity-25 bg-zinc-900 p-4 relative rounded-2xl mb-4 flex-col flex items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
+    <div className="border-2 border-brand-500 border-opacity-25 bg-body-100 p-4 relative rounded-2xl mb-4 flex-col flex items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
       {feedbackSent ? (
         <FeedbackSuccessStep
           onFeedbackRestartRequested={handleRestartFeedback}
@@ -63,13 +63,13 @@ export const WidgetForm = () => {
         </>
       )}
 
-      <footer className="text-xs text-neutral-400">
+      <footer className="text-xs text-note">
         Desenvolvido por{' '}
         <a
           className="underline underline-offset-2"
           href="https://www.linkedin.com/in/reysantos/"
         >
-          Rey
+          Kartado
         </a>
       </footer>
     </div>

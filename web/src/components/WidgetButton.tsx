@@ -10,7 +10,7 @@ export const WidgetButton = () => {
         <WidgetForm />
       </Popover.Panel>
 
-      <Popover.Button className="bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors focus:outline-none">
+      <Popover.Button className="bg-brand-300 rounded-full px-3 h-12 text-white flex items-center group focus:ring-2 focus:ring-offset-2 focus:ring-offset-brand-500 focus:ring-brand-500 transition-colors focus:outline-none">
         <ChatTeardropDots className="w-6 h-6 " />
         <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-linear">
           <span className="pl-2">Feedback</span>

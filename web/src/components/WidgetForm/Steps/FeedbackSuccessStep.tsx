@@ -30,10 +30,10 @@ export const FeedbackSuccessStep = ({
         />
       </svg>
 
-      <span className="text-xl mt-2">Agradecemos o feedback</span>
+      <span className="text-xl mt-2 text-note">Agradecemos o feedback</span>
       <button
         type="button"
-        className="py-2 px-6 mt-6 bg-zinc-800 rounded-md border-transparent text-sm leading-6 hover:bg-zinc-700 focus:border-brand-500 focus:ring-brand-500 focus:ring-1 resize-none scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin focus:outline-none transition-colors"
+        className="py-2 px-6 mt-6 bg-brand-500 rounded-md border-transparent text-sm leading-6 hover:brightness-125 focus:border-brand-500 focus:ring-brand-500 focus:ring-1 resize-none scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin focus:outline-none transition-colors"
         onClick={onFeedbackRestartRequested}
       >
         Quero enviar outro
